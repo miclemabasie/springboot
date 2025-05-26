@@ -5,11 +5,11 @@ public class Job {
     private Long id;
     private String title;
     private String description;
-    private double minSalary;
-    private double maxSalary;
+    private String minSalary;
+    private String maxSalary;
     private String location;
 
-    public Job(Long id, String title, String description, double minSalary, double maxSalary, String location) {
+    public Job(Long id, String title, String description, String minSalary, String maxSalary, String location) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -42,19 +42,19 @@ public class Job {
         this.description = description;
     }
 
-    public double getMinSalary() {
+    public String getMinSalary() {
         return minSalary;
     }
 
-    public void setMinSalary(double minSalary) {
+    public void setMinSalary(String minSalary) {
         this.minSalary = minSalary;
     }
 
-    public double getMaxSalary() {
+    public String getMaxSalary() {
         return maxSalary;
     }
 
-    public void setMaxSalary(double maxSalary) {
+    public void setMaxSalary(String maxSalary) {
         this.maxSalary = maxSalary;
     }
 
