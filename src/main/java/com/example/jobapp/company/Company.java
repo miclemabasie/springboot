@@ -1,13 +1,14 @@
 package com.example.jobapp.company;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
 public class Company {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String industry;
@@ -18,6 +19,8 @@ public class Company {
     private String description;
     private Date created_at;
 
+    public Company() {
+    }
 
     public Company(Long id, String name, String industry, String size, String website, String contact_email, String phone_number, String description, Date created_at) {
         this.id = id;

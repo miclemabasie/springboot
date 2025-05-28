@@ -48,7 +48,7 @@ public class JobController {
         return new ResponseEntity<>("Job Not Fount", HttpStatus.NOT_FOUND);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("                                                                                                                                                                                                                                                                                                                                                                                                                                                  /{id}")
     // @RequestMapping(value="jobs/{id}", method = RequestMethod.PUT)
     public ResponseEntity<String> updateJob(@PathVariable Long id, @RequestBody Job job){
         boolean updated = jobService.updateJob(id, job);

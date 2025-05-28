@@ -3,15 +3,17 @@ package com.example.jobapp.company.impl;
 import com.example.jobapp.company.Company;
 import com.example.jobapp.company.CompanyRepository;
 import com.example.jobapp.company.CompanyService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-public class CompnayServiceImpl implements CompanyService {
+@Service
+public class CompanyServiceImpl implements CompanyService {
 
-    CompanyRepository companyRepository;
+    final CompanyRepository companyRepository;
 
-    public CompnayServiceImpl(CompanyRepository companyRepository) {
+    public CompanyServiceImpl(CompanyRepository companyRepository) {
         this.companyRepository = companyRepository;
     }
 
